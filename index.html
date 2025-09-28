@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmbodiedSplat Crowdsource Upload</title>
+  <meta name="description"
+        content="Contribute 3D scans to the EmbodiedSplat project (ICCV 2025) and help advance real-to-sim navigation research." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- HERO -->
+  <header class="bg-indigo-700 text-white">
+    <div class="max-w-5xl mx-auto px-6 py-16 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">EmbodiedSplat Data Collection</h1>
+      <p class="mt-4 text-lg md:text-xl">
+        A continuation of our <a href="https://gchhablani.github.io/embodied-splat/"
+           class="underline font-semibold hover:text-indigo-200">ICCV 2025 paper</a>.
+        Let's build a large-scale dataset of 3D scans from university buildings.
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScecSK4atBOa9vX1G5W0vauKWM_eGVCZ_zrq2sKK7tHlM6imQ/viewform?usp=dialog"
+         class="inline-block mt-8 bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-100">
+        Upload Your Scan
+      </a>
+      <p class="mt-4 text-sm md:text-lg italic">
+        Please read the instructions below before uploading to secure your $x reward!
+      </p>
+    </div>
+  </header>
+
+  <!-- WHY CONTRIBUTE -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold mb-6">Why Contribute?</h2>
+    <p class="mb-4">
+      We study robot navigation using high-fidelity 3D reconstructions.
+      By sharing your captures of an indoor scene (a classroom, a lounge, a conference room) on campus, you’ll help us improve training environments and advance
+      embodied AI research.
+    </p>
+    <p>
+      All submissions are stored securely in our Georgia Tech research drive and will be used
+      strictly for academic purposes in accordance with our IRB protocol.
+    </p>
+    <p class="font-bold mb-4">
+      Contributors will receive $x per approved scan (up to $y total).
+    </p>
+  </section>
+
+  <!-- STEP-BY-STEP with IMAGES -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-semibold mb-10 text-center">How to Capture & Upload</h2>
+
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <h3 class="font-bold mb-2">1. Setup Polycam</h3>
+          <p>Use the <a href="https://poly.cam" class="text-indigo-600 underline">Polycam</a> app to scan an indoor scene. Go to <strong>Settings -> Developer Mode</strong> and turn <strong>Developer Mode</strong> on.</p>
+          <img src="images/developer.jpeg" alt="Step 1" class="rounded-xl shadow-lg mb-4 mx-auto">
+          </div>
+        <div>
+          <h3 class="font-bold mb-2">2. Scan</h3>
+          <p>Capture data in <strong>Space</strong> mode. This would use the lidar sensor. </p>
+          <img src="images/space.jpeg" alt="Step 2" class="rounded-xl shadow-lg mb-4 mx-auto">
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">3. Process</h3>
+          <p>After scanning, tap <strong>Process</strong> to process the data in the Polycam app.</p>
+          <img src="images/process.jpeg" alt="Step 1" class="rounded-xl shadow-lg mb-4 mx-auto">
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">4. Export</h3>
+          <p>Click the download icon in the top right corner. </p>
+          <img src="images/export.jpeg" alt="Step 3" class="rounded-xl shadow-lg mb-4 mx-auto">
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">5. Extract GLTF file</h3>
+          <p>Select <strong>GLTF</strong> to export to a <strong>.glb</strong> file. Upload this file.</p>
+          <img src="images/gltf.jpeg" alt="Step 2" class="rounded-xl shadow-lg mb-4 mx-auto">
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">6. Extract raw data</h3>
+          <p>Select <strong>raw data</strong> to export a <strong>.zip</strong> file. Upload this file as well.</p>
+          <img src="images/raw data.jpeg" alt="Step 3" class="rounded-xl shadow-lg mb-4 mx-auto">
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScecSK4atBOa9vX1G5W0vauKWM_eGVCZ_zrq2sKK7tHlM6imQ/viewform?usp=dialog"
+           class="inline-block bg-indigo-700 text-white font-semibold px-8 py-4 rounded-xl shadow hover:bg-indigo-800">
+          Upload Your Scan
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules & Tips -->
+<section class="bg-gray-100">
+  <div class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold mb-6">Requirements & Tips for Great Captures</h2>
+    <ul class="space-y-4 list-disc list-inside text-lg">
+      <li><strong>Device Requirement:</strong> Use an iPhone Pro or iPad Pro with LiDAR (e.g., iPhone 12 Pro or newer).</li>
+      <li><strong>What to Scan:</strong> Focus on indoor scenes like classrooms, lounges, and conference rooms. One typical scan should take 10-20 minutes.</li>
+      <li><strong>Privacy First:</strong> Avoid including any people or personally identifiable information (PII) in your scans.</li>
+      <li><strong>Lighting:</strong> Capture in good, even lighting to reduce noise and improve mesh quality.</li>
+      <li><strong>Coverage:</strong> Walk slowly around the entire space; wait until the purple shadow on your scan clears to move.</li>
+    </ul>
+    <p class="mt-6 text-gray-700">
+      Following these guidelines helps us create cleaner, more usable datasets for EmbodiedSplat
+      and ensures your contribution is valuable for research.
+    </p>
+  </div>
+</section>
+
+<!-- Example Capture -->
+<section class="bg-white">
+  <div class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Example Capture</h2>
+
+    <!-- Responsive video wrapper -->
+    <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-xl shadow-lg">
+      <video class="absolute top-0 left-0 w-full h-full rounded-xl"
+             src="videos/polycam.mp4"
+             autoplay
+             muted
+             loop
+             playsinline
+             controls>
+         Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <p class="mt-6 text-center text-gray-700">
+      A sample Polycam LiDAR scan showing the level of coverage and quality we aim for.
+    </p>
+  </div>
+</section>
+
+  <!-- FAQ -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold mb-6">FAQ</h2>
+    <ul class="space-y-4">
+      <li><strong>Max file size?</strong> 500&nbsp;MB per capture.</li>
+      <li><strong>Do I need a Google account?</strong> Yes, to upload through the Google Form.</li>
+      <li><strong>What will happen to my data?</strong> Files are stored in a secure Georgia Tech Drive folder and used only for research and publication.</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-5xl mx-auto px-6 py-8 text-center text-sm">
+      &copy; 2025 EmbodiedSplat • Built with <a href="https://tailwindcss.com" class="underline">Tailwind CSS</a><br>
+      Hosted on <a href="https://pages.github.com/" class="underline">GitHub Pages</a>
+    </div>
+  </footer>
+
+</body>
+</html>
